@@ -1,0 +1,43 @@
+@use "../helpers/variables" as var;
+
+:root {
+  font-family: var.$font-family;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+    color: var.$text-color;
+    text-decoration: none;
+}
+
+.section-title {
+  line-height: 110%;
+  text-transform: uppercase;
+  font: {
+    size: 1.125rem;
+    weight: 300;
+  }
+}
+
+.section-subtitle {
+  line-height: 110%;
+  margin-bottom: 2rem;
+  font: {
+    size: 3rem;
+    weight: 700;
+  }
+}
+
+.section-secondary-heading {
+  margin-bottom: 2rem;
+  line-height: 110%;
+  font: {
+    size: 1.5rem;
+    weight: 600;
+  }
+}

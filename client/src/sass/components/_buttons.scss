@@ -1,0 +1,14 @@
+@use "../helpers/variables" as var;
+@use "../helpers/placeholders";
+
+.hero-portfolio-button {
+  @extend %square-button;
+  background-color: var.$primary;
+  width: 12rem;
+}
+
+.connect-button {
+  @extend %square-button;
+  width: 30%;
+  background-color: var.$background-color;
+}

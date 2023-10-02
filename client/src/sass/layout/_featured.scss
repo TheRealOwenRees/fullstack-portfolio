@@ -1,0 +1,61 @@
+@use "../helpers/variables" as var;
+@use "../helpers/placeholders";
+
+.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5rem 3rem;
+  .featured-header {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    place-self: center;
+    width: 100%;
+    max-width: 1080px;
+  }
+  .featured-projects {
+    display: grid;
+    grid-column: 1 / -1;
+    max-width: 1080px;
+    place-self: center;
+    gap: 1.5rem;
+    .project {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .project-image {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+      .featured-title {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+      }
+      .featured-text {
+        margin: 0;
+      }
+      .featured-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0.5rem;
+        .featured-live-button {
+          @extend %square-button;
+          background-color: var.$primary;
+        }
+        .featured-source-button {
+          @extend %square-button;
+        }
+      }
+    }
+
+
+  }
+}
+
+@media (min-width: 768px) {
+  .featured-projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}

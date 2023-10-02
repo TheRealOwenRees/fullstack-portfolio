@@ -1,0 +1,88 @@
+@use "../helpers/variables" as var;
+
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: 1rem 3rem;
+  position: fixed;
+  transition: 0.5s;
+
+  .logo {
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var.$accent;
+    color: var.$accent;
+    font-weight: 600;
+    text-align: center;
+    a {
+      color: var.$accent;
+    }
+  }
+
+  .nav-items {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    list-style: none;
+
+    li {
+      display: inline-block;
+    }
+
+    .icon a {
+      color: var.$accent;
+      font-size: 1.2rem;
+      &::before {
+        background-image: none;
+      }
+    }
+
+    a, a:link, a:visited {
+      text-decoration: none;
+      position: relative;
+      padding-bottom: 31px; /* The distance between text and underline */
+    }
+
+    a::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      background-image: linear-gradient(90deg, var.$accent, var.$accent); /* underline color */
+      background-size: 0 3px; /* vertical size of underline */
+      background-repeat: no-repeat;
+      background-position: left bottom; /* start position of underline */
+      transition: background-size .3s ease-in; /* duration and timing style of animation */
+    }
+
+    a:hover::before {
+      background-size: 100% 3px;
+    }
+  }
+}
+
+.hero-bgcolor {
+  background-color: var.$background-color
+}
+
+.portfolio-bgcolor {
+  background-color: var.$background-color-secondary
+}
+
+.about-bgcolor {
+  background-color: var.$background-color
+}
+
+.blog-bgcolor {
+  background-color: var.$background-color-secondary
+}
+
+.connect-bgcolor {
+  background-color: var.$accent;
+}

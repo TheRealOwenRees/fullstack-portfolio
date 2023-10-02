@@ -1,0 +1,25 @@
+@use "../helpers/variables" as var;
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  padding: 3rem;
+  gap: 0.5rem;
+  color: var.$background-color;
+  background-color: var.$text-color;
+  a {
+    color: var.$background-color;
+    transition: color 0.3s linear;
+    &:hover {
+      color: var.$accent;
+      transition: color 0.3s linear;
+    }
+  }
+  .footer-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.5rem;
+  }
+}

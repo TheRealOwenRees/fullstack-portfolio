@@ -1,0 +1,57 @@
+@use "../helpers/variables" as var;
+@use "../helpers/placeholders";
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 5rem 3rem;
+  margin-top: 80px;
+  color: var.$text-color;
+  background-color: var.$background-color-secondary;
+  justify-items: center;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1080px;
+    .hero-title-intro {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 110%;
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .hero-title {
+      font-size: 4rem;
+      font-weight: 800;
+      line-height: 110%;
+    }
+    .hero-subtitle {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+    .button {
+      @extend %square-button;
+      width: 12rem;
+      background-color: var.$primary;
+      line-height: 140%;
+      font: {
+        size: 1rem;
+        weight: 400;
+      }
+    }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: calc(100vh - 80px);
+    max-height: 1080px;
+  }
+  .hero-container {
+    grid-template-columns: 1fr 1fr;
+
+  }
+}

@@ -1,0 +1,77 @@
+@use "../helpers/variables" as var;
+
+.about {
+  display: grid;
+  padding: 5rem 3rem;
+  background-color: var.$background-color-secondary;
+  p {
+    margin-bottom: 1rem;
+  }
+  img {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+  }
+  .about-container {
+    display: grid;
+    gap: 2rem;
+    max-width: 1080px;
+    place-self: center;
+    .about-text {
+      grid-row: 1;
+      height: 100%;
+      align-self: center;
+    }
+  }
+  .expertise-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1080px;
+    place-self: center;
+    margin-top: 2rem;
+    .expertise-heading {
+      display: flex;
+    }
+    .expertise-heading-title {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.expertise {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1 / -1;
+  gap: 1.5rem;
+  place-self: center;
+  .expertise-icon {
+    color: var.$accent;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .expertise-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 110%;
+    margin-bottom: 1rem;
+  }
+  .expertise-item {
+    padding: 2rem 10%;
+    background-color: var.$background-color;
+  }
+  .expertise-text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 140%;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .expertise {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
