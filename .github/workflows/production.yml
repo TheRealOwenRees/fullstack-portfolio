@@ -41,7 +41,7 @@ jobs:
           target: /home/${{ secrets.USERNAME }}/portfolio
 
 
-      - name: Test execute remote command - WORKS
+      - name: Restart service
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
