@@ -36,4 +36,6 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
-          script: ls
+          script: |
+            output=$(ls)
+            echo "Script Output: $output"
