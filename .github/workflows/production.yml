@@ -25,6 +25,11 @@ jobs:
         run: npm run build
         working-directory: client
 
+      - name: Build backend binary
+        run: |
+          make clean
+          make build
+
 #      - name: Cache npm dependencies
 #        uses: actions/cache@v2
 #        with:
