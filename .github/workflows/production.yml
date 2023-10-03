@@ -31,15 +31,20 @@ jobs:
           make build
 
       - name: Test upload of binary to server
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          port: ${{ secrets.PORT }}
-          key: ${{ secrets.SSH_KEY }}
-          source: main
-          target: /home/${{ secrets.USERNAME }}/portfolio
-        working-directory: bin
+        run: |
+          cd bin
+          scp -i ${{ secrets.SSH_KEY }} main ${{ secrets.USERNAME }}@${{ secrets.HOST }}:/home/${{ secrets.USERNAME }}/portfolio
+
+#      - name: Test upload of binary to server
+#        uses: appleboy/scp-action@master
+#        with:
+#          host: ${{ secrets.HOST }}
+#          username: ${{ secrets.USERNAME }}
+#          port: ${{ secrets.PORT }}
+#          key: ${{ secrets.SSH_KEY }}
+#          source: main
+#          target: /home/${{ secrets.USERNAME }}/portfolio
+#        working-directory: bin
 
 #      - name: Test execute remote command - WORKS
 #        uses: appleboy/ssh-action@master
