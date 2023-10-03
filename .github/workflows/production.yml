@@ -30,15 +30,15 @@ jobs:
           make clean
           make build
 
-      - name: Test upload of binary to server
-        uses: appleboy/scp-action@master
-        env:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
-        with:
-          source: ./bin/main
-          target: /home/portfolio
+#      - name: Test upload of binary to server
+#        uses: appleboy/scp-action@master
+#        env:
+#          host: ${{ secrets.HOST }}
+#          username: ${{ secrets.USERNAME }}
+#          key: ${{ secrets.SSH_KEY }}
+#        with:
+#          source: ./bin/main
+#          target: /home/portfolio
 
       - name: Test execute remote command
         uses: appleboy/ssh-action@master
@@ -46,4 +46,5 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
-          script: whoami
+          port: ${{ secrets.PORT }}
+          script: ls
