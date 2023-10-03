@@ -8,18 +8,20 @@ jobs:
   build-frontend:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Cache npm dependencies
-        uses: actions/cache@v2
+      - uses: actions/checkout@v4
         with:
-          path: client/node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('client/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          path: client
 
-      - name: Change to Client Directory
-        run: cd client
+#      - name: Cache npm dependencies
+#        uses: actions/cache@v2
+#        with:
+#          path: client/node_modules
+#          key: ${{ runner.os }}-node-${{ hashFiles('client/package-lock.json') }}
+#          restore-keys: |
+#            ${{ runner.os }}-node-
+
+#      - name: Change to Client Directory
+#        run: cd client
 
       - name: Install Dependencies
         run: npm ci
