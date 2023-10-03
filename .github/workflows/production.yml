@@ -30,7 +30,7 @@ jobs:
           make clean
           make build
 
-      - name: Test upload of binary to server
+      - name: Upload of binary to server
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
@@ -41,11 +41,11 @@ jobs:
           target: /home/${{ secrets.USERNAME }}/portfolio
 
 
-#      - name: Test execute remote command - WORKS
-#        uses: appleboy/ssh-action@master
-#        with:
-#          host: ${{ secrets.HOST }}
-#          username: ${{ secrets.USERNAME }}
-#          port: ${{ secrets.PORT }}
-#          key: ${{ secrets.SSH_KEY }}
-#          script: ls -la
+      - name: Test execute remote command - WORKS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.SSH_KEY }}
+          script: sudo service portfolio restart
