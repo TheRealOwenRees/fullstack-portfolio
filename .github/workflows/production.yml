@@ -37,8 +37,9 @@ jobs:
           username: ${{ secrets.USERNAME }}
           port: ${{ secrets.PORT }}
           key: ${{ secrets.SSH_KEY }}
-          source: /bin/main
+          source: main
           target: /home/${{ secrets.USERNAME }}/portfolio
+        working-directory: bin
 
 #      - name: Test execute remote command - WORKS
 #        uses: appleboy/ssh-action@master
