@@ -10,36 +10,36 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18.x'
-          cache: 'npm'
-          cache-dependency-path: '**/package-lock.json'
+#      - name: Setup node
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: '18.x'
+#          cache: 'npm'
+#          cache-dependency-path: '**/package-lock.json'
+#
+#      - name: Install dependencies
+#        run: npm ci
+#        working-directory: client
+#
+#      - name: Build frontend
+#        run: npm run build
+#        working-directory: client
+#
+#      - name: Build backend binary
+#        run: |
+#          make clean
+#          make build
 
-      - name: Install dependencies
-        run: npm ci
-        working-directory: client
-
-      - name: Build frontend
-        run: npm run build
-        working-directory: client
-
-      - name: Build backend binary
-        run: |
-          make clean
-          make build
-
-      - name: Test upload of binary to server
-        uses: appleboy/scp-action@master
-        env:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          port: ${{ secrets.PORT }}
-          key: ${{ secrets.SSH_KEY }}
-        with:
-          source: ./bin/main
-          target: /portfolio
+#      - name: Test upload of binary to server
+#        uses: appleboy/scp-action@master
+#        env:
+#          host: ${{ secrets.HOST }}
+#          username: ${{ secrets.USERNAME }}
+#          port: ${{ secrets.PORT }}
+#          key: ${{ secrets.SSH_KEY }}
+#        with:
+#          source: ./bin/main
+#          target: /portfolio
 
       - name: Test execute remote command
         uses: appleboy/ssh-action@master
