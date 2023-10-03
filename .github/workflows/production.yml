@@ -10,14 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Cache npm dependencies
-        uses: actions/cache@v3
-        with:
-          path: client/node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('client/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
       - name: Setup node
         uses: actions/setup-node@v3
         with:
@@ -38,3 +30,10 @@ jobs:
           make clean
           make build
 
+      - name: Test execute remote command
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          script: ls
