@@ -1,4 +1,4 @@
-import design from "../assets/images/design.png";
+import design from "../assets/images/design.webp";
 import {
   LuFolderClosed,
   LuSquareCode,

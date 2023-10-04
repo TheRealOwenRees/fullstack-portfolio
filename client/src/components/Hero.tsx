@@ -1,4 +1,4 @@
-import heroImage from "../assets/images/hero_img.png";
+import heroImage from "../assets/images/hero_img.webp";
 import downArrow from "../assets/svg/down-arrow.svg";
 import { LuChevronDownCircle } from "react-icons/lu";
 
@@ -9,8 +9,14 @@ function Hero() {
         <div className="hero-intro">
           <h1 className="hero-title-intro">Hi, I'm Owen Rees</h1>
           <h2 className="hero-title">Fullstack Web & App Developer</h2>
-          <h3 className="hero-subtitle">JavaScript | TypeScript | React | NextJS | NodeJS | Python</h3>
-          <a href="#portfolio" className="hero-portfolio-button" aria-label="portfolio">
+          <h3 className="hero-subtitle">
+            JavaScript | TypeScript | React | NextJS | NodeJS | Python
+          </h3>
+          <a
+            href="#portfolio"
+            className="hero-portfolio-button"
+            aria-label="portfolio"
+          >
             My Portfolio
             <img src={downArrow} alt="down arrow" className="button-arrow" />
           </a>
