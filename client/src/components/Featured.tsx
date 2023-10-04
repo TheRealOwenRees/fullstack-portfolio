@@ -1,5 +1,7 @@
-import echecsfrance from "../assets/images/portfolio/echecsfrance.png";
-import plantIDBot from "../assets/images/portfolio/plantIDBot.png";
+import echecsfrance from "../assets/images/portfolio/images/echecsfrance.png";
+import plantIDBot from "../assets/images/portfolio/images/plantIDBot.png";
+import echecsfranceThumbnail from "../assets/images/portfolio/thumbnails/echecsfrance.webp";
+import plantIDBotThumbnail from "../assets/images/portfolio/thumbnails/plantIDBot.webp";
 import upRightArrow from "../assets/svg/up-right-arrow.svg";
 
 function Featured() {
@@ -11,7 +13,9 @@ function Featured() {
       </div>
       <div className="featured-projects">
         <div className="project">
-          <img src={echecsfrance} alt="Echecs France" />
+          <a href={echecsfrance} target="_blank">
+            <img src={echecsfranceThumbnail} alt="Echecs France" />
+          </a>
           <div>
             <h4 className="featured-title">Echecs France</h4>
             <p className="featured-text">
@@ -48,7 +52,13 @@ function Featured() {
           </div>
         </div>
         <div className="project">
-          <img src={plantIDBot} alt="Echecs France" className="project-image" />
+          <a href={plantIDBot} target="_blank">
+            <img
+              src={plantIDBotThumbnail}
+              alt="Echecs France"
+              className="project-image"
+            />
+          </a>
           <div>
             <h4 className="featured-title">Plant ID Bot</h4>
             <p className="featured-text">
