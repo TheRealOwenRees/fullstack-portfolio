@@ -11,6 +11,7 @@ function Connect() {
         <a
           href="mailto:owenrees@tutanota.com"
           className="connect-button button-press"
+           aria-label="Email"
         >
           Email
           <LuMail />
@@ -19,6 +20,7 @@ function Connect() {
           href="https://www.linkedin.com/in/therealowenrees/"
           target="_blank"
           className="connect-button button-press"
+           aria-label="LinkedIn"
         >
           LinkedIn
           <LuLinkedin className="connect-icon" />
@@ -27,6 +29,7 @@ function Connect() {
           href="https://github.com/TheRealOwenRees"
           target="_blank"
           className="connect-button button-press"
+           aria-label="GitHub"
         >
           GitHub
           <LuGithub />
