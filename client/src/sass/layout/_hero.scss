@@ -4,7 +4,7 @@
 .hero {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 5rem 3rem;
+  padding: 3rem 1rem;
   margin-top: 80px;
   color: var.$text-color;
   background-color: var.$background-color-secondary;
@@ -45,6 +45,17 @@
     }
 }
 
+.chevron-down {
+  display: none;
+  margin-top: 1rem;
+}
+
+@media (min-width: 600px) {
+  .hero {
+    padding: 5rem 3rem 0 3rem;
+  }
+}
+
 @media (min-width: 768px) {
   .hero {
     height: calc(100vh - 80px);
@@ -52,6 +63,8 @@
   }
   .hero-container {
     grid-template-columns: 1fr 1fr;
-
+  }
+  .chevron-down {
+    display: initial;
   }
 }
