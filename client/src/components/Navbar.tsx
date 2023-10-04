@@ -50,6 +50,7 @@ function Navbar() {
             className="icon-link"
             href="https://github.com/TheRealOwenRees"
             target="_blank"
+            aria-label="GitHub"
           >
             <LuGithub />
           </a>
@@ -59,6 +60,7 @@ function Navbar() {
             className="icon-link"
             href="https://www.linkedin.com/in/therealowenrees/"
             target="_blank"
+            aria-label="LinkedIn"
           >
             <LuLinkedin />
           </a>

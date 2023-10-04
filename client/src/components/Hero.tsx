@@ -10,7 +10,7 @@ function Hero() {
           <h1 className="hero-title-intro">Hi, I'm Owen Rees</h1>
           <h2 className="hero-title">Fullstack Web & App Developer</h2>
           <h3 className="hero-subtitle">JavaScript | TypeScript | React | NextJS | NodeJS | Python</h3>
-          <a href="#portfolio" className="hero-portfolio-button">
+          <a href="#portfolio" className="hero-portfolio-button" aria-label="portfolio">
             My Portfolio
             <img src={downArrow} alt="down arrow" className="button-arrow" />
           </a>

@@ -13,13 +13,14 @@ function Footer() {
         </p>
       </div>
       <div className="footer-icons">
-        <a href="mailto:owenrees@tutanota.com">
+        <a href="mailto:owenrees@tutanota.com" aria-label="Email">
           <LuMail />
         </a>
-        <a href="https://www.linkedin.com/in/therealowenrees/" target="_blank">
+        <a href="https://www.linkedin.com/in/therealowenrees/" target="_blank" aria-label="LinkedIn
+        ">
           <LuLinkedin />
         </a>
-        <a href="https://github.com/TheRealOwenRees" target="_blank">
+        <a href="https://github.com/TheRealOwenRees" target="_blank" aria-label="GitHub">
           <LuGithub />
         </a>
       </div>
