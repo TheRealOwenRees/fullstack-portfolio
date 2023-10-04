@@ -5,19 +5,38 @@
   grid-template-columns: 1fr;
   place-items: center;
   text-align: center;
-  padding: 5rem 3rem;
+  padding: 3rem 1rem;
   gap: 2rem;
   background-color: var.$accent;
   .connect-buttons-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 1080px;
     gap: 1rem;
     .connect-button {
       display: flex;
       flex-direction: column;
+      width: 50%;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .connect {
+    .connect-buttons-container {
+      flex-direction: row;
+      .connect-button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .connect {
+    padding: 5rem 3rem;
   }
 }

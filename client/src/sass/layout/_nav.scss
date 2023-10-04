@@ -3,9 +3,9 @@
 .navbar {
   display: flex;
   width: 100%;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
   position: fixed;
-  transition: 0.5s;
+  transition: color 0.5s;
 
   .logo {
     display: flex;
@@ -29,16 +29,19 @@
     justify-content: space-between;
     margin-left: auto;
     list-style: none;
+    flex-shrink: 0;
 
     li {
       display: inline-block;
     }
 
-    .icon a {
-      color: var.$accent;
+    .icon {
       font-size: 1.2rem;
-      &::before {
-        background-image: none;
+      a {
+        color: var.$accent;
+        &::before {
+          background-image: none;
+        }
       }
     }
 
@@ -85,4 +88,10 @@
 
 .connect-bgcolor {
   background-color: var.$accent;
+}
+
+@media (min-width: 550px) {
+  .navbar {
+    padding: 1rem 3rem;
+  }
 }
