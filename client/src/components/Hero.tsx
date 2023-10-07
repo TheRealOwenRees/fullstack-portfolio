@@ -15,7 +15,7 @@ function Hero() {
           <a
             href="#portfolio"
             className="hero-portfolio-button"
-            aria-label="portfolio"
+            aria-label="My Portfolio"
           >
             My Portfolio
             <img src={downArrow} alt="down arrow" className="button-arrow" />
