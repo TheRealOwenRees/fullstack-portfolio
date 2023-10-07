@@ -14,7 +14,12 @@ function Featured() {
       <div className="featured-projects">
         <div className="project">
           <a href={echecsfrance} target="_blank">
-            <img src={echecsfranceThumbnail} alt="Echecs France" />
+            <img
+              src={echecsfranceThumbnail}
+              alt="Echecs France"
+              width="600px"
+              height="auto"
+            />
           </a>
           <div>
             <h4 className="featured-title">Echecs France</h4>
@@ -57,6 +62,8 @@ function Featured() {
               src={plantIDBotThumbnail}
               alt="Echecs France"
               className="project-image"
+              width="600px"
+              height="auto"
             />
           </a>
           <div>

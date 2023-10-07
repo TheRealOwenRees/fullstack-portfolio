@@ -31,7 +31,7 @@ function About() {
           <h4 className="section-secondary-heading">
             Aligning Business Goals with User Needs
           </h4>
-          <img src={design} alt="design" />
+          <img src={design} alt="design" width="600px" height="auto" />
         </div>
       </div>
 
