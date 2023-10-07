@@ -15,18 +15,32 @@ function Hero() {
           <a
             href="#portfolio"
             className="hero-portfolio-button"
-            aria-label="My Portfolio"
+            aria-label="View Portfolio"
           >
-            My Portfolio
-            <img src={downArrow} alt="down arrow" className="button-arrow" />
+            View Portfolio
+            <img
+              src={downArrow}
+              alt="arrow pointing down"
+              className="button-arrow"
+              aria-hidden={true}
+              height="600px"
+              width="600px"
+            />
           </a>
         </div>
         <div className="hero-image">
-          <img className="hero-image" src={heroImage} alt="hero" />
+          <img
+            className="hero-image"
+            src={heroImage}
+            alt="Owen Rees, Fullstack Web & App Developer"
+          />
         </div>
       </div>
-      <a href="#portfolio">
-        <LuChevronDownCircle className="chevron-down" />
+      <a href="#portfolio" aria-label="View Portfolio">
+        <LuChevronDownCircle
+          className="chevron-down"
+          alt="chevron pointing down"
+        />
       </a>
     </section>
   );
