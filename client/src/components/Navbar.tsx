@@ -1,30 +1,8 @@
 import { LuGithub, LuLinkedin } from "react-icons/lu";
-import { useEffect } from "react";
+import useNavColour from "../hooks/useNavColour.tsx";
 
 function Navbar() {
-  useEffect(() => {
-    // TODO move into its own file / hook
-    const navbar = document.querySelector(".navbar");
-    const sections = document.querySelectorAll("section");
-
-    window.addEventListener("scroll", () => {
-      const scrollY = window.scrollY;
-
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-
-        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-          const sectionId = section.id;
-          const bgColorClassName = `${sectionId}-bgcolor`;
-          if (navbar) {
-            navbar.className = `navbar ${bgColorClassName}`;
-          }
-        }
-      });
-    });
-  }, []);
-
+  useNavColour();
   return (
     <nav className="navbar">
       <div className="logo spin">
