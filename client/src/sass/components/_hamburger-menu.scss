@@ -1,0 +1,40 @@
+@use "../helpers/variables" as var;
+
+.hamburger-menu {
+  display: flex;
+  top: 0;
+  right: -200px;
+  text-align: center;
+  position: absolute;
+  width: 200px;
+  height: fit-content;
+  padding: 50px 0 20px 0;
+  background: var.$background-color;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  li {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.2em;
+  }
+  .icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .icon {
+      font-size: 1.2rem;
+      a {
+        color: var.$accent;
+        &::before {
+          background-image: none;
+        }
+      }
+    }
+}
+
+.hamburger-menu-open {
+  transform: translateX(-200px);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}

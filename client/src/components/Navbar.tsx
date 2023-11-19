@@ -1,8 +1,10 @@
 import { LuGithub, LuLinkedin } from "react-icons/lu";
 import useNavColour from "../hooks/useNavColour.tsx";
+import Hamburger from "./Hamburger.tsx";
 
 function Navbar() {
   useNavColour();
+
   return (
     <nav className="navbar">
       <div className="logo spin">
@@ -44,6 +46,7 @@ function Navbar() {
           </a>
         </li>
       </ul>
+      <Hamburger />
     </nav>
   );
 }

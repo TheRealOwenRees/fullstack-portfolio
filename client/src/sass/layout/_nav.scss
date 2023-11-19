@@ -6,6 +6,7 @@
   padding: 1rem 1rem;
   position: fixed;
   transition: background-color 0.5s;
+  align-items: center;
 
   .logo {
     display: flex;
@@ -31,7 +32,7 @@
     flex-shrink: 0;
 
     li {
-      display: inline-block;
+      display: none;
     }
 
     .icon {
@@ -92,5 +93,11 @@
 @media (min-width: 550px) {
   .navbar {
     padding: 1rem 3rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .navbar .nav-items li {
+    display: inline-block;
   }
 }
