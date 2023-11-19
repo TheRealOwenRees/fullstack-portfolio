@@ -7,3 +7,9 @@ export interface ProjectProps {
   url: string;
   github: string;
 }
+
+export interface BlogPostProps {
+  image: string;
+  title: string;
+  url: string;
+}
