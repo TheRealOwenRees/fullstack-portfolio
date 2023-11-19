@@ -6,12 +6,12 @@
 @use './base/colors';
 
 /* Layouts */
-@use "layout/section";
+@use "./layout/section";
 @use "./layout/nav";
 @use "./layout/hero";
 @use "./layout/featured";
 @use "./layout/about";
-@use "./layout/latest";
+@use "./layout/blog";
 @use "./layout/connect";
 @use "./layout/footer";
 

@@ -1,0 +1,46 @@
+@use "../helpers/variables" as var;
+
+.blog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5rem 3rem;
+  .blog-header {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    place-self: center;
+    width: 100%;
+    max-width: 1080px;
+  }
+  .blog-posts {
+    display: grid;
+    grid-column: 1 / -1;
+    max-width: 1080px;
+    place-self: center;
+  }
+}
+
+.blog-post {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  .blog-title {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+  }
+  .blog-image {
+    aspect-ratio: 1 / 1;
+  }
+}
+@media (min-width: 600px) {
+  .blog {
+    padding: 5rem 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .blog-posts {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -20,9 +20,9 @@ function Navbar() {
         <li>
           <a href="#about">About</a>
         </li>
-        {/*<li>*/}
-        {/*  <a href="#blog">Blog</a>*/}
-        {/*</li>*/}
+        <li>
+          <a href="#blog">Blog</a>
+        </li>
         <li className="icon">
           <a
             className="icon-link"
