@@ -18,6 +18,8 @@
 /* Components */
 @use "./components/arrows";
 @use "./components/buttons";
+@use "./components/hamburger";
+@use "./components/hamburger-menu";
 
 /* Animations */
 @use "./animations/button-press";
