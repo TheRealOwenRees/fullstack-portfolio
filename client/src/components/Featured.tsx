@@ -1,8 +1,8 @@
-import echecsfrance from "../assets/images/portfolio/images/echecsfrance.png";
-import plantIDBot from "../assets/images/portfolio/images/plantIDBot.png";
-import chessPDF from "../assets/images/portfolio/images/chessPDF.png";
+import echecsfrance from "../assets/images/portfolio/images/echecsfrance.jpg";
 import echecsfranceThumbnail from "../assets/images/portfolio/thumbnails/echecsfrance.webp";
-import plantIDBotThumbnail from "../assets/images/portfolio/thumbnails/plantIDBot.webp";
+import plantIDBot from "../assets/images/portfolio/images/plantID.jpg";
+import plantIDBotThumbnail from "../assets/images/portfolio/thumbnails/plantID.webp";
+import chessPDF from "../assets/images/portfolio/images/chessPDF.jpg";
 import chessPDFThumbnail from "../assets/images/portfolio/thumbnails/chessPDF.webp";
 
 import Project from "./Project.tsx";
