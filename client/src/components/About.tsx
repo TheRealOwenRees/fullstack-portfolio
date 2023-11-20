@@ -14,9 +14,9 @@ function About() {
           <h2 className="section-title"></h2>
           <h3 className="section-subtitle">About Me</h3>
           <p>
-            Hi, thanks for stopping by. I'm Owen Rees, a full-stack web and
-            application developer. I love to contribute to open source projects
-            and build full-stack applications.
+            I'm Owen Rees, a full-stack web and application developer. I love to
+            contribute to open source projects and build full-stack
+            applications.
           </p>
           <p>
             I specialise in React / NextJS, TypeScript / Javascript, Node.js,
