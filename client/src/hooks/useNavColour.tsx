@@ -21,6 +21,10 @@ const useNavColour = () => {
         }
       });
     });
+
+    return () => {
+      window.removeEventListener("scroll", () => {});
+    };
   }, []);
 };
 
