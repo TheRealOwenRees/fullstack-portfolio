@@ -26,29 +26,29 @@ const HamburgerMenu = ({ hamburgerOpen, setHamburgerOpen }: HamburgerProps) => {
         <li>
           <a href="#blog">Blog</a>
         </li>
-        <div className="icons">
-          <li className="icon">
-            <a
-              className="icon-link"
-              href="https://github.com/TheRealOwenRees"
-              target="_blank"
-              aria-label="GitHub"
-            >
-              <LuGithub />
-            </a>
-          </li>
+      </ul>
+      <ul className="icons">
+        <li className="icon">
+          <a
+            className="icon-link"
+            href="https://github.com/TheRealOwenRees"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <LuGithub />
+          </a>
+        </li>
 
-          <li className="icon">
-            <a
-              className="icon-link"
-              href="https://www.linkedin.com/in/therealowenrees/"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <LuLinkedin />
-            </a>
-          </li>
-        </div>
+        <li className="icon">
+          <a
+            className="icon-link"
+            href="https://www.linkedin.com/in/therealowenrees/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <LuLinkedin />
+          </a>
+        </li>
       </ul>
     </div>
   );

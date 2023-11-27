@@ -2,6 +2,7 @@
 
 .hamburger-menu {
   display: flex;
+  flex-direction: column;
   top: 0;
   right: -200px;
   text-align: center;
@@ -14,14 +15,13 @@
   -webkit-font-smoothing: antialiased;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   li {
-    display: block;
+    display: flex;
     padding: 1rem 0;
     font-size: 1.2em;
   }
   .icons {
     display: flex;
     gap: 1rem;
-    justify-content: center;
   }
   .icon {
       font-size: 1.2rem;
