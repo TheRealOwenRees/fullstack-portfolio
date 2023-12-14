@@ -1,5 +1,6 @@
 import BlogPost from "./BlogPost.tsx";
 import binaryBG from "../assets/images/blog/binaryBG.webp";
+import gradientBG from "../assets/images/blog/gradient.webp";
 
 function Blog() {
   return (
@@ -9,6 +10,11 @@ function Blog() {
         <h3 className="section-subtitle">Featured Posts</h3>
       </div>
       <div className="blog-posts">
+        <BlogPost
+          image={gradientBG}
+          title="Utilising Bitwise Operators in JavaScript, by Building a RGB to Hex Colour Convertor"
+          url="https://dev.to/therealowenrees/utilising-bitwise-operators-in-javascript-by-building-a-rgb-to-hex-colour-convertor-24ai"
+        />
         <BlogPost
           image={binaryBG}
           title="Using Bitwise XOR to Solve the 'Lonely Integer' Problem"
