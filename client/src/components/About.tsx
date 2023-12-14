@@ -13,7 +13,6 @@ import sassSvg from "../assets/svg/icons8-sass.svg";
 import postgresqlSvg from "../assets/svg/icons8-postgresql.svg";
 import dockerSvg from "../assets/svg/icons8-docker.svg";
 import graphqlSvg from "../assets/svg/icons8-graphql.svg";
-import nodeSvg from "../assets/svg/icons8-nodejs.svg";
 import mongoSvg from "../assets/svg/mongodb-icon.svg";
 
 function About() {
