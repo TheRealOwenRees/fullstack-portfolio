@@ -14,6 +14,7 @@ import postgresqlSvg from "../assets/svg/icons8-postgresql.svg";
 import dockerSvg from "../assets/svg/icons8-docker.svg";
 import graphqlSvg from "../assets/svg/icons8-graphql.svg";
 import nodeSvg from "../assets/svg/icons8-nodejs.svg";
+import mongoSvg from "../assets/svg/mongodb-icon.svg";
 
 function About() {
   return (
@@ -37,9 +38,7 @@ function About() {
           </p>
         </div>
         <div>
-          <h4 className="section-secondary-heading">
-            Aligning Business Goals with User Needs
-          </h4>
+          <h4 className="section-secondary-heading">Tech Stack</h4>
           <div className="tech-icons">
             <img
               src={jsSvg}
@@ -56,9 +55,9 @@ function About() {
               height="auto"
             />
             <img
-              src={nodeSvg}
-              title="NodeJS"
-              alt="nodejs"
+              src={pythonSvg}
+              title="Python"
+              alt="python"
               width="60px"
               height="auto"
             />
@@ -79,16 +78,16 @@ function About() {
           </div>
           <div className="tech-icons">
             <img
-              src={pythonSvg}
-              title="Python"
-              alt="python"
+              src={sassSvg}
+              title="SASS/SCSS"
+              alt="sass"
               width="60px"
               height="auto"
             />
             <img
-              src={sassSvg}
-              title="SASS/SCSS"
-              alt="sass"
+              src={mongoSvg}
+              title="MongoDB"
+              alt="mongodb"
               width="60px"
               height="auto"
             />
@@ -116,7 +115,6 @@ function About() {
           </div>
         </div>
       </div>
-
       <div className="expertise-container">
         <div className="expertise-heading">
           <LuFolderClosed />
