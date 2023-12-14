@@ -1,4 +1,5 @@
-import heroImage from "../assets/images/hero_img.webp";
+// import heroImage from "../assets/images/hero_img.webp";
+import heroImage from "../assets/images/hero.webp";
 import downArrow from "../assets/svg/down-arrow.svg";
 import { LuChevronDownCircle } from "react-icons/lu";
 

@@ -1,8 +1,5 @@
-import echecsfrance from "../assets/images/portfolio/images/echecsfrance.jpg";
 import echecsfranceThumbnail from "../assets/images/portfolio/thumbnails/echecsfrance.webp";
-import plantIDBot from "../assets/images/portfolio/images/plantID.jpg";
 import plantIDBotThumbnail from "../assets/images/portfolio/thumbnails/plantID.webp";
-import chessPDF from "../assets/images/portfolio/images/chessPDF.jpg";
 import chessPDFThumbnail from "../assets/images/portfolio/thumbnails/chessPDF.webp";
 
 import Project from "./Project.tsx";
@@ -16,7 +13,6 @@ function Featured() {
       </div>
       <div className="featured-projects">
         <Project
-          image={chessPDF}
           thumbnail={chessPDFThumbnail}
           title={"Chess PDF"}
           text={"A PDF generator for chess games, written in TypeScript"}
@@ -25,7 +21,6 @@ function Featured() {
           github={"https://github.com/TheRealOwenRees/chess-pdf"}
         />
         <Project
-          image={echecsfrance}
           thumbnail={echecsfranceThumbnail}
           title={"Echecs France"}
           text={"A visual representation of FFE chess tournaments in France"}
@@ -34,7 +29,6 @@ function Featured() {
           github={"https://github.com/TheRealOwenRees/echecsfrance"}
         />
         <Project
-          image={plantIDBot}
           thumbnail={plantIDBotThumbnail}
           title={"Plant ID Bot"}
           text={

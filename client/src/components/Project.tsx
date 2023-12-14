@@ -2,7 +2,6 @@ import { ProjectProps } from "../../types.ts";
 import upRightArrow from "../assets/svg/up-right-arrow.svg";
 
 const Project = ({
-  image,
   thumbnail,
   title,
   text,
@@ -12,7 +11,7 @@ const Project = ({
 }: ProjectProps) => {
   return (
     <div className="project">
-      <a href={image} target="_blank">
+      <a href={url} target="_blank">
         <img src={thumbnail} alt={title} width="600px" height="auto" />
       </a>
       <div>
