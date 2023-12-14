@@ -1,10 +1,19 @@
-import design from "../assets/images/design.webp";
 import {
   LuFolderClosed,
   LuSquareCode,
   LuHash,
   LuDatabase,
 } from "react-icons/lu";
+import reactSvg from "../assets/svg/icons8-react.svg";
+import tsSvg from "../assets/svg/icons8-typescript.svg";
+import pythonSvg from "../assets/svg/icons8-python.svg";
+import nextjsSvg from "../assets/svg/icons8-nextjs.svg";
+import jsSvg from "../assets/svg/icons8-javascript.svg";
+import sassSvg from "../assets/svg/icons8-sass.svg";
+import postgresqlSvg from "../assets/svg/icons8-postgresql.svg";
+import dockerSvg from "../assets/svg/icons8-docker.svg";
+import graphqlSvg from "../assets/svg/icons8-graphql.svg";
+import nodeSvg from "../assets/svg/icons8-nodejs.svg";
 
 function About() {
   return (
@@ -31,7 +40,80 @@ function About() {
           <h4 className="section-secondary-heading">
             Aligning Business Goals with User Needs
           </h4>
-          <img src={design} alt="design" width="600px" height="auto" />
+          <div className="tech-icons">
+            <img
+              src={jsSvg}
+              title="JavaScript"
+              alt="javascript"
+              width="60px"
+              height="auto"
+            />
+            <img
+              src={tsSvg}
+              title="TypeScript"
+              alt="typescript"
+              width="60px"
+              height="auto"
+            />
+            <img
+              src={nodeSvg}
+              title="NodeJS"
+              alt="nodejs"
+              width="60px"
+              height="auto"
+            />
+            <img
+              src={reactSvg}
+              title="React"
+              alt="react"
+              width="60px"
+              height="auto"
+            />
+            <img
+              src={nextjsSvg}
+              title="NextJS"
+              alt="nextjs"
+              width="60px"
+              height="auto"
+            />
+          </div>
+          <div className="tech-icons">
+            <img
+              src={pythonSvg}
+              title="Python"
+              alt="python"
+              width="60px"
+              height="auto"
+            />
+            <img
+              src={sassSvg}
+              title="SASS/SCSS"
+              alt="sass"
+              width="60px"
+              height="auto"
+            />
+            <img
+              src={postgresqlSvg}
+              title="PostgreSQL"
+              alt="postgresql"
+              width="60px"
+              height="auto"
+            />
+            <img
+              src={graphqlSvg}
+              title="GraphQL"
+              alt="graphql"
+              width="60px"
+              height="auto"
+            />
+            <img
+              src={dockerSvg}
+              title="Docker"
+              alt="docker"
+              width="60px"
+              height="auto"
+            />
+          </div>
         </div>
       </div>
 
