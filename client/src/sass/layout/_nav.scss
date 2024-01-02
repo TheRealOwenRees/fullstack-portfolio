@@ -177,6 +177,14 @@
 
 .connect-bgcolor {
   background-color: var.$background-color-secondary;
+
+  .icon a {
+    color: var.$accent;
+  }
+
+  a::before {
+    background-image: linear-gradient(90deg, var.$accent, var.$accent);
+  }
 }
 
 @media (min-width: 550px) {
