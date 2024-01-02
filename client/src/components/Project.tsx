@@ -19,7 +19,7 @@ const Project = ({
         <p className="featured-text">{text}</p>
         <div className="featured-buttons">
           <a
-            className="featured-live-button"
+            className="featured-live-button button-press"
             href={url}
             target="_blank"
             rel="noreferrer"
@@ -32,7 +32,7 @@ const Project = ({
             />
           </a>
           <a
-            className="featured-source-button"
+            className="featured-source-button button-press"
             href={github}
             target="_blank"
             rel="noreferrer"

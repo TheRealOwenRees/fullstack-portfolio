@@ -5,10 +5,17 @@
   @extend %square-button;
   background-color: var.$primary;
   width: 12rem;
+  margin: 0 auto;
 }
 
 .connect-button {
   @extend %square-button;
   width: 30%;
   background-color: var.$background-color;
+}
+
+@media (min-width: 768px) {
+  .hero-portfolio-button {
+    margin: 0;
+  }
 }

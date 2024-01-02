@@ -15,7 +15,7 @@ function Hero() {
           </h3>
           <a
             href="#portfolio"
-            className="hero-portfolio-button"
+            className="hero-portfolio-button button-press"
             aria-label="View Portfolio"
           >
             View Portfolio
