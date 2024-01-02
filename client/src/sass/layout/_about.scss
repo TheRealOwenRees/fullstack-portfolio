@@ -3,7 +3,7 @@
 .about {
   display: grid;
   padding: 3rem 1rem;
-  background-color: var.$background-color-secondary;
+  background-color: var.$background-color-secondary-darker;
   p {
     margin-bottom: 1rem;
   }
@@ -17,10 +17,9 @@
     gap: 2rem;
     max-width: 1080px;
     place-self: center;
-    .about-text {
-      grid-row: 1;
-      height: 100%;
-      align-self: center;
+    color: var.$text-color-secondary;
+    p {
+      color: var.$text-color-secondary-darker;
     }
   }
   .expertise-container {
@@ -32,6 +31,7 @@
     margin-top: 2rem;
     .expertise-heading {
       display: flex;
+      color: var.$text-color-secondary
     }
     .expertise-heading-title {
       margin-left: 0.5rem;

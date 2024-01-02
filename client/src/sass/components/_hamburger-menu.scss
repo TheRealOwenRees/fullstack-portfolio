@@ -23,15 +23,15 @@
     display: flex;
     gap: 1rem;
   }
-  .icon {
-      font-size: 1.2rem;
-      a {
-        color: var.$accent;
-        &::before {
-          background-image: none;
-        }
-      }
-    }
+  //.icon {
+  //    font-size: 1.2rem;
+  //    a {
+  //      //color: var.$accent;
+  //      &::before {
+  //        background-image: none;
+  //      }
+  //    }
+  //  }
 }
 
 .hamburger-menu-open {

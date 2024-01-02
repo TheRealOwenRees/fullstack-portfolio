@@ -17,6 +17,7 @@
     grid-column: 1 / -1;
     max-width: 1080px;
     place-self: center;
+    gap: 1.5rem;
   }
 }
 
@@ -33,6 +34,12 @@
     aspect-ratio: 1 / 1;
   }
 }
+
+.blog-post:hover > div:first-child > a {
+  filter: brightness(0.5);
+  transition: filter 0.3s;
+}
+
 @media (min-width: 600px) {
   .blog {
     padding: 5rem 3rem;

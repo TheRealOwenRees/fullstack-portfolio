@@ -18,9 +18,6 @@
     border: 2px solid var.$text-color;
     font-weight: 600;
     text-align: center;
-    a {
-      color: var.$text-color;
-    }
   }
 
   .nav-items {
@@ -38,11 +35,9 @@
 
     .icon {
       font-size: 1.2rem;
-      a {
-        color: var.$accent;
-        &::before {
-          background-image: none;
-        }
+
+      a::before {
+        background-image: none;
       }
     }
 
@@ -58,7 +53,7 @@
       width: 100%;
       top: 0;
       bottom: 0;
-      background-image: linear-gradient(90deg, var.$accent, var.$accent); /* underline color */
+      //background-image: linear-gradient(90deg, var.$accent, var.$accent); /* underline color */
       background-size: 0 3px; /* vertical size of underline */
       background-repeat: no-repeat;
       background-position: left bottom; /* start position of underline */
@@ -72,23 +67,116 @@
 }
 
 .hero-bgcolor {
-  background-color: var.$background-color
+  background-color: var.$background-color;
+
+  a {
+    color: var.$text-color;
+  }
+
+  .logo {
+    border: 2px solid var.$text-color;
+  }
+
+  .hamburger-menu {
+    background-color: var.$background-color;
+    .icon a {
+      color: var.$accent;
+    }
+  }
+
+  .icon a {
+    color: var.$accent;
+  }
+
+  a::before {
+    background-image: linear-gradient(90deg, var.$accent, var.$accent);
+  }
 }
+
 
 .portfolio-bgcolor {
-  background-color: var.$background-color-secondary
+  background-color: var.$background-color-secondary-darker;
+
+  a {
+    color: var.$text-color-secondary;
+  }
+
+  .logo {
+    border: 2px solid var.$text-color-secondary;
+  }
+
+  .hamburger span {
+    background-color: var.$background-color;
+  }
+
+  .hamburger-menu {
+    background-color: var.$background-color-secondary-darker;
+  }
+
+  .icon a {
+    color: var.$primary;
+  }
+
+  a::before {
+    background-image: linear-gradient(90deg, var.$primary, var.$primary);
+  }
 }
 
+
 .about-bgcolor {
-  background-color: var.$background-color
+  background-color: var.$background-color;
+
+  a {
+    color: var.$text-color;
+  }
+
+  .logo {
+    border: 2px solid var.$text-color;
+  }
+
+  .hamburger-menu {
+    background-color: var.$background-color;
+  }
+
+  .icon a {
+    color: var.$accent;
+  }
+
+  a::before {
+    background-image: linear-gradient(90deg, var.$accent, var.$accent);
+  }
 }
 
 .blog-bgcolor {
-  background-color: var.$background-color-secondary
+  background-color: var.$background-color-secondary-darker;
+
+  a {
+    color: var.$text-color-secondary;
+  }
+
+  .logo {
+    border: 2px solid var.$text-color-secondary;
+  }
+
+  .hamburger-menu {
+      background-color: var.$background-color-secondary-darker;
+  }
+
+  .hamburger span {
+    background-color: var.$background-color;
+  }
+
+  .icon a {
+    color: var.$primary;
+  }
+
+  a::before {
+    background-image: linear-gradient(90deg, var.$primary, var.$primary);
+  }
 }
 
 .connect-bgcolor {
-  background-color: var.$accent;
+  background-color: var.$background-color-secondary;
 }
 
 @media (min-width: 550px) {
