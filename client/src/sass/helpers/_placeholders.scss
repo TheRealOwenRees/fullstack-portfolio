@@ -1,5 +1,6 @@
 @use 'variables' as var;
 
+/* BUTTONS */
 %square-button {
   display: flex;
   padding: 1rem 2rem;
@@ -10,4 +11,68 @@
   border: 1px solid var.$text-color;
   line-height: 140%;
   text-decoration: none;
+}
+
+/* NAVBAR */
+%light-navbar {
+  background-color: var.$background-color;
+
+  a {
+    color: var.$text-color;
+  }
+
+  .logo {
+    border: 2px solid var.$text-color;
+  }
+
+  .icon a {
+    color: var.$text-color;
+    &:hover {
+      color: var.$accent;
+      transition: color 0.3s;
+    }
+  }
+
+  .hamburger-menu {
+    background-color: var.$background-color;
+    .icon a {
+      color: var.$text-color;
+    }
+  }
+
+  a::before {
+    background-image: linear-gradient(90deg, var.$accent, var.$accent);
+  }
+}
+
+%dark-navbar {
+  background-color: var.$background-color-secondary-darker;
+
+  a {
+    color: var.$text-color-secondary;
+  }
+
+  .icon a {
+    color: var.$text-color-secondary;
+    &:hover {
+      color: var.$primary;
+      transition: color 0.3s;
+    }
+  }
+
+  .logo {
+    border: 2px solid var.$text-color-secondary;
+  }
+
+  .hamburger-menu {
+      background-color: var.$background-color-secondary-darker;
+  }
+
+  .hamburger span {
+    background-color: var.$background-color;
+  }
+
+  a::before {
+    background-image: linear-gradient(90deg, var.$primary, var.$primary);
+  }
 }

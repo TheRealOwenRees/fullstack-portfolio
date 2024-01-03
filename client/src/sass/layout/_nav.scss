@@ -1,6 +1,8 @@
 @use "../helpers/variables" as var;
+@use "../helpers/placeholders";
 
 .navbar {
+  @extend %light-navbar;
   z-index: 999;
   display: flex;
   width: 100%;
@@ -15,7 +17,6 @@
     width: 3rem;
     justify-content: center;
     align-items: center;
-    border: 2px solid var.$text-color;
     font-weight: 600;
     text-align: center;
   }
@@ -35,7 +36,6 @@
 
     .icon {
       font-size: 1.2rem;
-
       a::before {
         background-image: none;
       }
@@ -53,7 +53,6 @@
       width: 100%;
       top: 0;
       bottom: 0;
-      //background-image: linear-gradient(90deg, var.$accent, var.$accent); /* underline color */
       background-size: 0 3px; /* vertical size of underline */
       background-repeat: no-repeat;
       background-position: left bottom; /* start position of underline */
@@ -67,124 +66,24 @@
 }
 
 .hero-bgcolor {
-  background-color: var.$background-color;
-
-  a {
-    color: var.$text-color;
-  }
-
-  .logo {
-    border: 2px solid var.$text-color;
-  }
-
-  .hamburger-menu {
-    background-color: var.$background-color;
-    .icon a {
-      color: var.$accent;
-    }
-  }
-
-  .icon a {
-    color: var.$accent;
-  }
-
-  a::before {
-    background-image: linear-gradient(90deg, var.$accent, var.$accent);
-  }
+  @extend %light-navbar;
 }
-
 
 .portfolio-bgcolor {
-  background-color: var.$background-color-secondary-darker;
-
-  a {
-    color: var.$text-color-secondary;
-  }
-
-  .logo {
-    border: 2px solid var.$text-color-secondary;
-  }
-
-  .hamburger span {
-    background-color: var.$background-color;
-  }
-
-  .hamburger-menu {
-    background-color: var.$background-color-secondary-darker;
-  }
-
-  .icon a {
-    color: var.$primary;
-  }
-
-  a::before {
-    background-image: linear-gradient(90deg, var.$primary, var.$primary);
-  }
+  @extend %dark-navbar;
 }
 
-
 .about-bgcolor {
-  background-color: var.$background-color;
-
-  a {
-    color: var.$text-color;
-  }
-
-  .logo {
-    border: 2px solid var.$text-color;
-  }
-
-  .hamburger-menu {
-    background-color: var.$background-color;
-  }
-
-  .icon a {
-    color: var.$accent;
-  }
-
-  a::before {
-    background-image: linear-gradient(90deg, var.$accent, var.$accent);
-  }
+  @extend %light-navbar;
 }
 
 .blog-bgcolor {
-  background-color: var.$background-color-secondary-darker;
-
-  a {
-    color: var.$text-color-secondary;
-  }
-
-  .logo {
-    border: 2px solid var.$text-color-secondary;
-  }
-
-  .hamburger-menu {
-      background-color: var.$background-color-secondary-darker;
-  }
-
-  .hamburger span {
-    background-color: var.$background-color;
-  }
-
-  .icon a {
-    color: var.$primary;
-  }
-
-  a::before {
-    background-image: linear-gradient(90deg, var.$primary, var.$primary);
-  }
+  @extend %dark-navbar;
 }
 
 .connect-bgcolor {
+  @extend %light-navbar;
   background-color: var.$background-color-secondary;
-
-  .icon a {
-    color: var.$accent;
-  }
-
-  a::before {
-    background-image: linear-gradient(90deg, var.$accent, var.$accent);
-  }
 }
 
 @media (min-width: 550px) {

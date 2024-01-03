@@ -3,17 +3,12 @@ import { LuGithub, LuLinkedin, LuMail } from "react-icons/lu";
 function Footer() {
   return (
     <footer className="footer">
-      {/*<div>*/}
-      {/*  <p>*/}
-      {/*    Initial design by{" "}*/}
-      {/*    <a href="https://www.figma.com/@imraan_alam" target="_blank">*/}
-      {/*      Imraan Alam{" "}*/}
-      {/*    </a>*/}
-      {/*    | Icons by <a href="https://icons8.com/">Icons8</a> | Built by Me*/}
-      {/*  </p>*/}
-      {/*</div>*/}
       <div className="footer-icons">
-        <a href="mailto:owenrees@tutanota.com" aria-label="Email">
+        <a
+          href="mailto:owenrees@tutanota.com"
+          target="_blank"
+          aria-label="Email"
+        >
           <LuMail />
         </a>
         <a
