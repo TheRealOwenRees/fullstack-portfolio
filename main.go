@@ -25,7 +25,7 @@ func main() {
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		// set the cache header
-		w.Header().Set("Cache-Control", "public, max-age=604800")
+		w.Header().Set("Cache-Control", "public, max-age=2592000")
 
 		// serve the file
 		http.FileServer(http.FS(dist)).ServeHTTP(w, r)
