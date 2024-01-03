@@ -24,7 +24,7 @@ function Hero() {
               alt="arrow pointing down"
               className="button-arrow"
               aria-hidden={true}
-              height="606px"
+              height="600px"
               width="600px"
             />
           </a>

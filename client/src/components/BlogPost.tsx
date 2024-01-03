@@ -5,7 +5,13 @@ const BlogPost = ({ image, title, url }: BlogPostProps) => {
     <div className="blog-post">
       <div>
         <a href={url} target="_blank">
-          <img src={image} alt="blog post" className="blog-image" />
+          <img
+            src={image}
+            alt="blog post"
+            className="blog-image"
+            width="200px"
+            height="auto"
+          />
         </a>
       </div>
       <div>
