@@ -1,6 +1,20 @@
+/* Colour Shades */
+$cabbage-pont-50: #f3f6f3;
+$cabbage-pont-100: #e3e9e2;
+$cabbage-pont-200: #c8d3c7;
+$cabbage-pont-300: #a0b5a1;
+$cabbage-pont-400: #769178;
+$cabbage-pont-500: #567358;
+$cabbage-pont-600: #415a44;
+$cabbage-pont-700: #394e3c;
+$cabbage-pont-800: #2b3a2d;
+$cabbage-pont-900: #243026;
+$cabbage-pont-950: #141a16;
+
 /* Typography */
 $font-family: 'Plus Jakarta Sans', sans-serif;
-$text-color: #415A44;
+$text-color: $cabbage-pont-600;
+$text-color-darker: $cabbage-pont-800;
 $text-color-secondary: #FFF2DE;
 $text-color-secondary-darker: #dcd5c5;
 
@@ -8,6 +22,6 @@ $text-color-secondary-darker: #dcd5c5;
 $background-color: #FFF2DE;
 $background-color-darker: #DCD5C5;
 $background-color-secondary: #A0B5A1;
-$background-color-secondary-darker: #567358;
+$background-color-secondary-darker: $cabbage-pont-500;
 $accent: #FE6C6F;
 $primary: #FF9F15;
