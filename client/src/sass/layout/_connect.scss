@@ -1,11 +1,10 @@
 @use "../helpers/variables" as var;
+@use "../helpers/placeholders";
 
 .connect {
-  display: grid;
-  grid-template-columns: 1fr;
+  @extend %section;
   place-items: center;
   text-align: center;
-  padding: 3rem 1rem;
   gap: 2rem;
   color: black;
   background-color: var.$background-color-secondary;

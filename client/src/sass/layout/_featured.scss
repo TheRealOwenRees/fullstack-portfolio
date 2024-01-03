@@ -2,9 +2,8 @@
 @use "../helpers/placeholders";
 
 .featured {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 3rem 1rem;
+  @extend %section;
+
   .featured-header {
     display: flex;
     flex-direction: column;
@@ -57,6 +56,9 @@
 }
 
 @media (min-width: 768px) {
+  .featured {
+    grid-template-columns: 1fr 1fr;
+  }
   .featured-projects {
     grid-template-columns: 1fr 1fr;
   }

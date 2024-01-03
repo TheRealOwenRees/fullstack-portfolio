@@ -1,9 +1,9 @@
 @use "../helpers/variables" as var;
+@use "../helpers/placeholders";
 
 .blog {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 5rem 3rem;
+  @extend %section;
+
   .blog-header {
     display: flex;
     flex-direction: column;
@@ -44,6 +44,9 @@
 }
 
 @media (min-width: 768px) {
+  .blog {
+    grid-template-columns: 1fr 1fr;
+  }
   .blog-posts {
     grid-template-columns: 1fr 1fr;
   }

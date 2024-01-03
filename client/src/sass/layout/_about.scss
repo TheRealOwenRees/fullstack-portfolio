@@ -1,41 +1,46 @@
 @use "../helpers/variables" as var;
+@use "../helpers/placeholders";
 
 .about {
-  display: grid;
-  padding: 3rem 1rem;
+  @extend %section;
   background-color: var.$background-color-secondary-darker;
+
   p {
     margin-bottom: 1rem;
   }
+
   img {
     max-width: 700px;
     width: 100%;
     height: auto;
   }
+
   .about-container {
     display: grid;
     gap: 2rem;
     max-width: 1080px;
     place-self: center;
     color: var.$text-color-secondary;
+
     p {
-      color: var.$text-color-secondary-darker;
+      color: var.$text-color-secondary;
     }
   }
-  .expertise-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    max-width: 1080px;
-    place-self: center;
-    margin-top: 2rem;
-    .expertise-heading {
-      display: flex;
-      color: var.$text-color-secondary
-    }
-    .expertise-heading-title {
-      margin-left: 0.5rem;
-    }
+}
+
+.expertise-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1080px;
+  place-self: center;
+  margin-top: 2rem;
+  .expertise-heading {
+    display: flex;
+    color: var.$text-color-secondary
+  }
+  .expertise-heading-title {
+    margin-left: 0.5rem;
   }
 }
 
