@@ -1,8 +1,13 @@
 @use "../helpers/variables" as var;
 
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../../../public/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+}
+
 :root {
   font-family: var.$font-family;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
