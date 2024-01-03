@@ -13,20 +13,20 @@ function Featured() {
       </div>
       <div className="featured-projects">
         <Project
-          thumbnail={chessPDFThumbnail}
-          title={"Chess PDF"}
-          text={"A PDF generator for chess games, written in TypeScript"}
-          liveButtonText={"Live"}
-          url={"https://chess-pdf.vercel.app/"}
-          github={"https://github.com/TheRealOwenRees/chess-pdf"}
-        />
-        <Project
           thumbnail={echecsfranceThumbnail}
           title={"Echecs France"}
           text={"A visual representation of FFE chess tournaments in France"}
           liveButtonText={"Live"}
           url={"https://echecsfrance.com"}
           github={"https://github.com/TheRealOwenRees/echecsfrance"}
+        />
+        <Project
+          thumbnail={chessPDFThumbnail}
+          title={"Chess PDF"}
+          text={"A PDF generator for chess games, written in TypeScript"}
+          liveButtonText={"Live"}
+          url={"https://chess-pdf.vercel.app/"}
+          github={"https://github.com/TheRealOwenRees/chess-pdf"}
         />
         <Project
           thumbnail={plantIDBotThumbnail}
